@@ -1,0 +1,312 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "jumpVirtualMachineName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name for the Virtual Machine."
+            }
+        },
+        "powerBIVirtualMachineName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of PowerBI VM"
+            }
+        },
+        "adminUsername": {
+            "type": "string",
+            "metadata": {
+                "description": "Username for the Virtual Machine."
+            }
+        },
+        "adminPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "Password for the Virtual Machine."
+            }
+        }
+    },
+    "variables": {
+        "jumpNicName": "[concat(parameters('jumpVirtualMachineName'), '-nic')]",
+        "powerBINicName": "[concat(parameters('powerBIVirtualMachineName'), '-nic')]",
+        "jumpPublicIPAddressName": "[concat('jumpvmpip', uniqueString(resourceGroup().id))]",
+        "powerBIPublicIPAddressName": "[concat('powerbivmpip', uniqueString(resourceGroup().id))]",
+        "nsgName": "nsg",
+        "vmStorageAccountContainerName": "vhds",
+        "virtualNetworkName": "vnet",
+        "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
+        "subnetRef": "[concat(variables('vnetID'),'/subnets/','subnet')]"
+    },
+    "resources": [{
+            "apiVersion": "2017-04-01",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "name": "[variables('jumpPublicIPAddressName')]",
+            "comments": "JUmp VM Public IP name",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "Jump Public IP"
+            },
+            "properties": {
+                "publicIPAllocationMethod": "Dynamic",
+                "dnsSettings": {
+                    "domainNameLabel": "[variables('jumpPublicIPAddressName')]"
+                }
+            }
+        },
+        {
+            "apiVersion": "2016-03-30",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "name": "[variables('powerBIPublicIPAddressName')]",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "PowerBI Public IP"
+            },
+            "comments": "PowerBI VM Public IP Address",
+            "properties": {
+                "publicIPAllocationMethod": "Dynamic",
+                "idleTimeoutInMinutes": 4,
+                "dnsSettings": {
+                    "domainNameLabel": "[concat(variables('powerBIPublicIPAddressName'))]"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "name": "[variables('nsgName')]",
+            "apiVersion": "2016-03-30",
+            "location": "[resourceGroup().location]",
+            "comments": "NSG for Subnet",
+            "tags": {
+                "displayName": "Network Security Group"
+            },
+            "properties": {
+                "securityRules": [{
+                        "name": "SSH-allow",
+                        "properties": {
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "22",
+                            "sourceAddressPrefix": "Internet",
+                            "destinationAddressPrefix": "10.0.0.0/16",
+                            "access": "Allow",
+                            "priority": 110,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "RDP-allow",
+                        "properties": {
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "3389",
+                            "sourceAddressPrefix": "Internet",
+                            "destinationAddressPrefix": "10.0.0.0/16",
+                            "access": "Allow",
+                            "priority": 120,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "Nodejs-allow",
+                        "properties": {
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "4200",
+                            "destinationAddressPrefix": "10.0.0.0/16",
+                            "sourceAddressPrefix": "Internet",
+                            "access": "Allow",
+                            "priority": 130,
+                            "direction": "Inbound"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "2017-04-01",
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[variables('virtualNetworkName')]",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkSecurityGroups/', variables('nsgName'))]"
+            ],
+            "comments": "Virtual Network",
+            "tags": {
+                "displayName": "Virtual Network"
+            },
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "10.0.0.0/16"
+                    ]
+                },
+                "subnets": [{
+                    "name": "subnet",
+                    "properties": {
+                        "addressPrefix": "10.0.0.0/24",
+                        "networkSecurityGroup": {
+                            "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('nsgName'))]"
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "apiVersion": "2017-04-01",
+            "type": "Microsoft.Network/networkInterfaces",
+            "name": "[variables('jumpNicName')]",
+            "location": "[resourceGroup().location]",
+            "comments": "Jump VM nic",
+            "dependsOn": [
+                "[concat('Microsoft.Network/publicIPAddresses/', variables('jumpPublicIPAddressName'))]",
+                "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
+            ],
+            "tags": {
+                "displayName": "Jump Network Interface Card"
+            },
+            "properties": {
+                "ipConfigurations": [{
+                    "name": "ipconfig1",
+                    "properties": {
+                        "privateIPAllocationMethod": "Dynamic",
+                        "publicIPAddress": {
+                            "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('jumpPublicIPAddressName'))]"
+                        },
+                        "subnet": {
+                            "id": "[variables('subnetRef')]"
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "apiVersion": "2016-03-30",
+            "type": "Microsoft.Network/networkInterfaces",
+            "name": "[variables('powerBINicName')]",
+            "location": "[resourceGroup().location]",
+            "comments": "PowerBI VM nic name",
+            "dependsOn": [
+                "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
+                "[concat('Microsoft.Network/publicIPAddresses/', variables('powerBIPublicIPAddressName'))]"
+            ],
+            "tags": {
+                "displayName": "PowerBI Network Interface Card"
+            },
+            "properties": {
+                "ipConfigurations": [{
+                    "name": "ipconfig1",
+                    "properties": {
+                        "privateIPAllocationMethod": "Dynamic",
+                        "publicIPAddress": {
+                            "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('powerBIPublicIPAddressName'))]"
+                        },
+                        "subnet": {
+                            "id": "[variables('subnetRef')]"
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "apiVersion": "2017-03-30",
+            "type": "Microsoft.Compute/virtualMachines",
+            "name": "[parameters('jumpVirtualMachineName')]",
+            "location": "[resourceGroup().location]",
+            "comments": "Jump VM name",
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkInterfaces/', variables('jumpNicName'))]"
+            ],
+            "tags": {
+                "displayName": "Jump Virtual Machine"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_DS2_v2"
+                },
+                "osProfile": {
+                    "computerName": "[parameters('jumpVirtualMachineName')]",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword": "[parameters('adminPassword')]"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/cosmos-hackfest-images/providers/Microsoft.Compute/images/jumpvm-', resourceGroup().location)]"
+                    },
+                    "osDisk": {
+                        "createOption": "FromImage",
+                        "managedDisk": {
+                            "storageAccountType": "Premium_LRS"
+                        }
+                    },
+                    "dataDisks": []
+                },
+                "networkProfile": {
+                    "networkInterfaces": [{
+                        "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('jumpNicName'))]"
+                    }]
+                }
+            }
+        },
+        {
+            "apiVersion": "2016-04-30-preview",
+            "type": "Microsoft.Compute/virtualMachines",
+            "name": "[parameters('powerBIVirtualMachineName')]",
+            "location": "[resourceGroup().location]",
+            "comments": "PowerBI VM",
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkInterfaces/', variables('powerBINicName'))]"
+            ],
+            "tags": {
+                "displayName": "PowerBI Virtual Machine"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_DS2_v2"
+                },
+                "osProfile": {
+                    "computerName": "[parameters('powerBIVirtualMachineName')]",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword": "[parameters('adminPassword')]",
+                    "windowsConfiguration": {
+                        "provisionVmAgent": "true"
+                    }
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/cosmos-powerbi-vmimage/providers/Microsoft.Compute/images/cosmospowerbi-', resourceGroup().location)]"
+                    },
+                    "osDisk": {
+                        "createOption": "fromImage",
+                        "managedDisk": {
+                            "storageAccountType": "Standard_LRS"
+                        }
+                    }
+                },
+                "networkProfile": {
+                    "networkInterfaces": [{
+                        "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('powerBINicName'))]"
+                    }]
+                }
+            }
+        }
+    ],
+    "outputs": {
+        "adminUsername": {
+            "type": "string",
+            "value": "[parameters('adminUsername')]"
+        },
+        "adminPassword": {
+            "type": "string",
+            "value": "[parameters('adminPassword')]"
+        },
+        "JumpVMDnsName": {
+            "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('jumpPublicIPAddressName'))).dnsSettings.fqdn]",
+            "type": "string"
+        },
+        "powerBIVMDnsName": {
+            "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('powerBIPublicIPAddressName'))).dnsSettings.fqdn]",
+            "type": "string"
+        }
+    }
+}

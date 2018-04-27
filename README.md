@@ -1,14 +1,40 @@
+# Azure Cosmos DB Hackfest
+### Utilizing Azure's Platform-as-a-Service (PaaS), next-generation, multi-model, globally distributed NoSQL platform for real-time applications
 
-# Contributing
+This repository contains practical exercises for the Azure CosmosDB Hackfest program. Here you will find a copy of the event schedule, challenge exercises, solutions, and presentations.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+<strong>Confirmed Locations:</strong>
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+<table>
+  <tr>
+    <td><strong><font size="+1">City</font></strong></td>
+    <td><strong><font size="+1">Location</font></strong></td>
+    <td><strong><font size="+1">Date</strong></font></td>
+  </tr>
+  <tr>
+    <td>Calgary, Alberta - Canada</td>
+    <td><a href="https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x716795abcd" target="_blank">Calgary</a></td>
+    <td>Monday 1/22/2018</td>
+  </tr>
+  <tr>
+    <td>Vancouver, British Columbia - Canada</td>
+    <td><a href="https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x716795abcd" target="_blank">Vancouver</a></td>
+    <td>Tuesday 1/23/2018</td>
+  </tr>
+    <tr>
+    <td>Toronto, Ontario - Canada</td>
+    <td><a href="https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x716795abcd" target="_blank">Toronto</a></td>
+    <td>Wednesday 1/23/2018</td>
+  </tr>
+    <tr>
+    <td>Mississauga, Ontario - Canada</td>
+    <td><a href="https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x716795abcd" target="_blank">Mississauga</a></td>
+    <td>Thursday 1/23/2018</td>
+  </tr>
+    <tr>
+    <td>Ottawa, Ontario - Canada</td>
+    <td><a href="https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x716795abcd" target="_blank">Ottawa</a></td>
+    <td>Friday 1/23/2018</td>
+  </tr>
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+</table>

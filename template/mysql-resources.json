@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "site_name": {
+            "type": "String"
+        },
+        "serverfarms_name": {
+            "type": "String"
+        },
+        "siteLocation": {
+            "defaultValue": "West US",
+            "allowedValues": [
+                "East Asia",
+                "Southeast Asia",
+                "Central US",
+                "East US",
+                "East US 2",
+                "West US",
+                "West US 2",
+                "North Central US",
+                "South Central US",
+                "North Europe",
+                "West Europe",
+                "Japan West",
+                "Japan East",
+                "Brazil South",
+                "Australia East",
+                "Australia Southeast",
+                "South India",
+                "Central India",
+                "West India"
+            ],
+            "type": "String"
+        },
+        "sku": {
+            "defaultValue": "F1",
+            "allowedValues": [
+                "F1",
+                "B1",
+                "S1"
+            ],
+            "type": "String"
+        }
+    },
+    "variables": {
+        "hostNameBindings_website": {
+            "value": "[concat(parameters('site_name'),'.azurewebsites.net')]",
+            "type": "String"
+        },
+        "hostNameBindings_scm": {
+            "value": "[concat(parameters('site_name'),'.scm.azurewebsites.net')]",
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Web/serverfarms",
+            "sku": {
+                "name": "[parameters('sku')]",
+                "capacity": 1
+            },
+            "kind": "app",
+            "name": "[parameters('serverfarms_name')]",
+            "apiVersion": "2016-09-01",
+            "location": "[parameters('siteLocation')]",
+            "dependsOn": []
+        },
+        {
+            "type": "Microsoft.Web/sites",
+            "kind": "app",
+            "name": "[parameters('site_name')]",
+            "apiVersion": "2016-08-01",
+            "location": "[parameters('siteLocation')]",
+            "properties": {
+                "enabled": true,
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_name'))]"
+            },
+            "resources": [
+                {
+                    "type": "config",
+                    "name": "web",
+                    "apiVersion": "2016-08-01",
+                    "properties": {
+                        "phpVersion": "7.0"
+                    },
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('site_name'))]"
+                    ]
+                }
+            ],
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_name'))]"
+            ]
+        }
+    ]
+}
