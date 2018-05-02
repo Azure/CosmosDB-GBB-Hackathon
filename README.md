@@ -22,9 +22,9 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
     <td>Thursday 5/17/2018</td>
   </tr>
     <tr>
-    <td>Toronto, Ontario - Canada</td>
-    <td><a href="https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x716795abcd" target="_blank">Toronto</a></td>
-    <td>Wednesday 1/23/2018</td>
+    <td>Malvern, PA - United States</td>
+    <td><a href="https://www.microsoftevents.com/profile/form/index.cfm?PKFormID=0x3769734917f" target="_blank">Malvern</a></td>
+    <td>Friday 5/18/2018</td>
   </tr>
     <tr>
     <td>Mississauga, Ontario - Canada</td>
