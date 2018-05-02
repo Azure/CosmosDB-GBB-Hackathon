@@ -16,10 +16,15 @@ In the begining of the lab, instructor will provide the attendees with a http://
       
        <img src="images/signup1.png"/><br/>  
  
- 3.  On **Clicking** Submit, you will be redirected to the following page. Click on the **LAUNCH LAB** button to start the deployment.  
+ 3.  On clicking **SUBMIT**, you will be redirected to the following page. Click on the **LAUNCH LAB** button to start the deployment.  
  
  <img src="images/launchlab1.png"/><br/>
         
+4. On clicking the **LAUNCH LAB** Button, you will get the following message.  
+
+<img src="images/envprer1.png"/><br/>  
+
+
 #### Time Estimate
 45 minutes
 
