@@ -18,11 +18,11 @@ In the begining of the lab, instructor will provide the attendees with a http://
  
  3.  On clicking **SUBMIT**, you will be redirected to the following page. Click on the **LAUNCH LAB** button to start the deployment.  
  
-    <img src="images/launchlab1.png"/><br/>
+       <img src="images/launchlab1.png"/><br/>
         
 4. On clicking the **LAUNCH LAB** Button, you will get the following message.  
 
-   <img src="images/envprep1.png"/><br/>  
+      <img src="images/envprep1.png"/><br/>  
 
 
 #### Time Estimate
