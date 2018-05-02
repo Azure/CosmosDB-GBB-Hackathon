@@ -3,11 +3,19 @@
 ### Lab Overview
 In this lab, you will be deploying pre-requisite infrastructure which is required for CosmosDB Hackfest.
 #### Prerequisites
-* Windows or a Mac machine with HTML5 supported browser such as Microsoft Edge, Internet Explorer, Chrome or Firefox.
-* You should have registered in the training portal https://experience-azure-mgmt.azurewebsites.net and received the confirmation message with the credentials to login to the Azure portal.
-* You will need Remote Desktop Connection (RDP) access. If you are using Mac, follow these details for installation: [Install Microsoft RDP on Mac](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac)
-
-<img src="images/module.jpg"/><br/>
+In the begining of the lab, instructor will provide the attendees with a http://bit.ly/ or http://aka.ms/ URL, using which the attendees can activate a pre-deployed lab instance and following are the steps.
+1.  **Navigate** to the the url provided by the instructor to register for the lab.  
+2.  Enter the following details to register for the lab:  
+      *  **First Name**:  
+      *  **Last Name**:  
+      *  **Work email**:  
+      *  **Organization**:  
+      *  **Country**:  
+      
+      **Click** on **SUBMIT** after entering the above details.
+      
+       <img src="images/signup1.png"/><br/>
+        
 #### Time Estimate
 45 minutes
 
