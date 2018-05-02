@@ -26,8 +26,9 @@ In the begining of the lab, instructor will provide the attendees with a http://
 
       <img src="images/envprep1.png"/><br/>  
 
+5. When the deployment is completed, the following details will be displayed. Use the following details to proceed further into the lab.    
 
-
+     <img src="images/deploymentsuccess1.png"/><br/> 
 
 ### Exercise 1: Log into your Azure Portal
 In this exercise, you will log into the Azure Portal using your Azure credentials.
