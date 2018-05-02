@@ -6,11 +6,11 @@ In this lab, you will be deploying pre-requisite infrastructure which is require
 In the begining of the lab, instructor will provide the attendees with a http://bit.ly/ or http://aka.ms/ URL, using which the attendees can activate a pre-deployed lab instance and following are the steps.
 1.  **Navigate** to the the url provided by the instructor to register for the lab.  
 2.  Enter the following details to register for the lab:  
-      *  **First Name**:  
-      *  **Last Name**:  
-      *  **Work email**:  
-      *  **Organization**:  
-      *  **Country**:  
+      *  **First Name**: Jay    
+      *  **Last Name**: Calvin    
+      *  **Work email**:  jay.calvin@contosso.com
+      *  **Organization**:  Contosso
+      *  **Country**:  United States
       
       **Click** on **SUBMIT** after entering the above details.
       
