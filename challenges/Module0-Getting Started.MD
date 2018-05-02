@@ -2,6 +2,8 @@
 ## Lab 1: Getting Started with Azure
 ### Lab Overview
 In this lab, you will be deploying pre-requisite infrastructure which is required for CosmosDB Hackfest.
+#### Time Estimate
+45 minutes
 #### Prerequisites
 In the begining of the lab, instructor will provide the attendees with a http://bit.ly/ or http://aka.ms/ URL, using which the attendees can activate a pre-deployed lab instance and following are the steps.
 1.  **Navigate** to the the url provided by the instructor to register for the lab.  
@@ -25,8 +27,7 @@ In the begining of the lab, instructor will provide the attendees with a http://
       <img src="images/envprep1.png"/><br/>  
 
 
-#### Time Estimate
-45 minutes
+
 
 ### Exercise 1: Log into your Azure Portal
 In this exercise, you will log into the Azure Portal using your Azure credentials.
