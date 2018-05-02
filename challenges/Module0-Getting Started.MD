@@ -60,7 +60,8 @@ In this exercise, you will verify the type of role you are assigned in this Subs
 
      <img src="images/rgnav1.png"/><br/>  
      
-4. You will see one Resource Groups on which you have access. Click on Resource Group which contains the pre-deployed on-premises infrastructure then click on **Overview** tab and finally on **JumpVM**.
-<img src="images/module8.jpg"/><br/>
+4. You will see one Resource Groups on which you have access. Click on Resource Group which contains the pre-deployed on-premises infrastructure then click on **Overview** tab and finally on **JumpVM**.    
+
+     <img src="images/jumpvm1.png"/><br/>
 
     > Note If you get err:connecting at first login: Click OK and try again.
