@@ -41,7 +41,9 @@ In this exercise, you will log into the Azure Portal using your Azure credential
 
      <img src="images/password1.png"/><br/>
 
-<img src="images/module3.jpg"/><br/>
+4.  You will now be logged in to the azure portal.  
+
+     <img src="images/module3.jpg"/><br/>
 
 ### Exercise 2: Verify access to the Subscription
 In this exercise, you will verify the type of role you are assigned in this Subscription.
