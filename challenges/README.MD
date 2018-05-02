@@ -11,7 +11,7 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
     <td><a href="/challenges/Module0-Getting Started.MD">Module0: Getting Started.MD</a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/SpektraSystems/CosmosDB-Hackfest/blob/master/challenges/Module1-Introduction%20to%20Cosmos%20DB.MD" target="_blank">Module1: Introduction to Cosmos DB.MD</a></td>
+    <td><a href="/challenges/Module1-Introduction%20to%20Cosmos%20DB.MD" target="_blank">Module1: Introduction to Cosmos DB.MD</a></td>
   </tr>
    <tr>
     <td><a href="https://github.com/SpektraSystems/CosmosDB-Hackfest/blob/master/challenges/Module2-Migrating%20MongoDB%20Apps%20to%20Azure%20Cosmos%20DB(Mongo%20API).MD" target="_blank">Module2: Migrate MongoDB Applications to Azure Cosmos DB(Mongo API)
