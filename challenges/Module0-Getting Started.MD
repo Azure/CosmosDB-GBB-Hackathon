@@ -32,9 +32,9 @@ In the begining of the lab, instructor will provide the attendees with a http://
 
 ### Exercise 1: Log into your Azure Portal
 In this exercise, you will log into the Azure Portal using your Azure credentials.
-1.	**Navigate** to https://portal.azure.com and login (from the previous step).
-2. Enter a new **password**. Then select **Update password and sign in**.
-
+1.  **Navigate** to https://portal.azure.com and login (from the previous step).
+2.  Enter the **Username** which was displayed in the previous window and **click** on **Next**.  
+     <img src="images/username1.png"/><br/> 
 <img src="images/module2.jpg"/><br/>
 3. Now, you will be directed to the Azure Dashboard.
 
