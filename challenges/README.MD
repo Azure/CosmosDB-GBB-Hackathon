@@ -18,7 +18,7 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
 </a></td>
   </tr>
     <tr>
-    <td><a href="/challenges/Module3-Migrating%20MongoDB%20Apps%20to%20Azure%20Cosmos%20DB(Mongo%20API).MD" target="_blank">Module3: Migrate MongoDB Application to Azure Cosmos DB(SQL API) [Optional]
+    <td><a href="/challenges/Module3-Migrating MongoDB Apps to Azure Cosmos DB(SQL API).MD" target="_blank">Module3: Migrate MongoDB Application to Azure Cosmos DB(SQL API) [Optional]
 </a></td>
   </tr>
 </table>
