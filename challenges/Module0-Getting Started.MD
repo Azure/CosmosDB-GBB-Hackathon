@@ -22,7 +22,7 @@ In the begining of the lab, instructor will provide the attendees with a http://
         
 4. On clicking the **LAUNCH LAB** Button, you will get the following message.  
 
-<img src="images/envprer1.png"/><br/>  
+<img src="images/envprep1.png"/><br/>  
 
 
 #### Time Estimate
