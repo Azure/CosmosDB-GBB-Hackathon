@@ -8,7 +8,7 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
 
 <table>
   <tr>
-    <td><a href="/Module0-Getting Started.MD">Module0: Getting Started.MD</a></td>
+    <td><a href="/challenges/Module0-Getting Started.MD">Module0: Getting Started.MD</a></td>
   </tr>
   <tr>
     <td><a href="https://github.com/SpektraSystems/CosmosDB-Hackfest/blob/master/challenges/Module1-Introduction%20to%20Cosmos%20DB.MD" target="_blank">Module1: Introduction to Cosmos DB.MD</a></td>
