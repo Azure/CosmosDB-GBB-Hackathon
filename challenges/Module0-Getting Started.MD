@@ -64,4 +64,4 @@ In this exercise, you will verify the type of role you are assigned in this Subs
 
      <img src="images/jumpvm1.png"/><br/>
 
-    > Note If you get err:connecting at first login: Click OK and try again.
+    > Note If you get error while connecting at first login: Click OK and try again.
