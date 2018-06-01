@@ -86,22 +86,18 @@
 <img src="images/notepad.jpg"/><br/>   
 23.  Then go back to the **Target information** page of the Data migration tool and provide the following details.<br/>
        - Export to: **DocumentDB-Bulk import(Single partition collections)**.<br/>
-       - Connection String: Copy the entire text from the notepad and paste it here.<br/>
+       - Connection String: Copy the entire text from the notepad and paste it here and Click on **Verify** button to verify the connection. Then a notification blade will pop-up which says **Successfully connected to documentDB account**.In that notification blade click on **OK**. <br/>
+       - Collections: Enter the name of the new collection, (i.e, **mynewcollection**). After this Click on **Add** button to add the collection.<br/>
     <img src="images/targetinfodb.jpg"/><br/>   
-24. After this Click on **Verify** button to verify the connection. Then a notification blade will pop-up which says **Successfully             connected to documentDB account**.In that notification blade click on **OK**. <br/>
-    <img src="images/Notification.jpg"/><br/>   
-       - Collections: Enter the name of the new collection, (i.e, **mynewcollection**).  
-25. After this Click on **Add** button to add the collection.<br/>
-    <img src="images/targetinfocollection.jpg"/><br/>    
        - Collection throughput: Copy the collection **throughput** from the **overview** page of **Azure Cosmos DB account** and paste it here.<br/>
-    Click on **Next** button.
     <img src="images/copythruput.jpg"/><br/>
+    - Click on **Next** button.<br/>
     <img src="images/targetThruput.jpg"/><br/>
-26.  Then an **advanced** page will appear, in that click on **Next**.
+24.  Then an **advanced** page will appear, in that click on **Next**.
      <img src="images/advancedPage.jpg"/><br/>
-27.  Then a Summary page will appear, in that click on **Import**.
+26.  Then a Summary page will appear, in that click on **Import**.
      <img src="images/importtodb.jpg"/><br/>
-28.  Now the import will start.It will take a couple of minutes to complete.
+27.  Now the import will start.It will take a couple of minutes to complete.
      <img src="images/exportStatus.jpg"/><br/>
 ### 1.4	Use Data Explorer to interact with Cosmos DB database
 #### 1.4.1	Verify Data in Azure Portal
