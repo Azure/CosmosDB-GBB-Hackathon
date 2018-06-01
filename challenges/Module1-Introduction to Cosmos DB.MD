@@ -56,7 +56,7 @@
 4.  Click on **Connect** button. It will open **Connent to virtual machine** window.<br/>
 <img src="images/connect.png"/><br/>
 5. Click on **Download RDP File**. It automatically download RDP file.<br/>
-<img src="images/downloadrdp.png"/><br/>
+<img src="images/downloadrdp.jpg"/><br/>
 5.  Open that **RDP** file. Remote desktop window will pops up, Click on **Connect** button.<br/>
 <img src="images/connect2.png"/><bbr/>
 6.  Now go to lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and paste it in **Enter your credentials** page. Click on **OK**<br/>
