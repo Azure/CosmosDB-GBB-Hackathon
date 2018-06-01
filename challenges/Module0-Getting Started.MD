@@ -63,5 +63,26 @@ In this exercise, you will verify the type of role you are assigned in this Subs
 4. You will see one Resource Groups on which you have access. Click on Resource Group which contains the pre-deployed on-premises infrastructure then click on **Overview** tab and finally on **JumpVM**.    
 
      <img src="images/jumpvm1.png"/><br/>
+     
+ # Overview
+Due to recent change, you might get the following issue in rdp connection.
+* An authentication error has occurred.
+  The function requested is not supported.  
+  This could be due to CredSSP encryption oracle remediation.
+  For more information, see https://go.microsoft.com/fwlink/?linkid=866660
+  
+  <kbd>![](Images/RDP%20credSSP.jpg)</kbd>
+  
+## Following is fix for this: 
+* You can run the following dos command to make change in in registry setting
+    > REG  ADD HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters\ /v AllowEncryptionOracle /t REG_DWORD /d 2
+    
+* You can read more about this at https://blogs.technet.microsoft.com/mckittrick/unable-to-rdp-to-virtual-machine-credssp-encryption-oracle-remediation/
+
+* If you cannot RDP to  VMs from your patched client, we can consider changing the policy settings on the client to temporarily gain RDP access to the servers. You can change the settings in Local Group Policy Editor. Execute gpedit.msc and browse to Computer Configuration / Administrative Templates / System / Credentials Delegation in the left pane:
+ <kbd>![](Images/fix.jpg)</kbd>
+ 
+* Change the Encryption Oracle Remediation policy to Enabled, and Protection Level to Vulnerable:
+  <kbd>![](Images/enable.jpg)</kbd>
 
     > Note If you get error while connecting at first login: Click OK and try again.
