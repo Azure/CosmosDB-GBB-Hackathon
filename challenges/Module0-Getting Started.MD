@@ -64,7 +64,7 @@ In this exercise, you will verify the type of role you are assigned in this Subs
 
      <img src="images/jumpvm1.png"/><br/>
      
- # Overview
+ ### Exercise 3: Resolve SSP Oracle Credential Issue
 Due to recent change, you might get the following issue in rdp connection.
 * An authentication error has occurred.
   The function requested is not supported.  
