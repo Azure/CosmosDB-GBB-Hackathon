@@ -14,21 +14,22 @@
 <img src="images/selectCosmosDB.jpg"/><br/>
 6.	Click on Create in the **Azure Cosmos DB** blade.<br/>
 <img src="images/cosmos_create.jpg"/><br/>
-7.	Provide the following details in the Add directory blade.<br/>
-    -	ID : Provide any unique name.
-    -	API : **SQL** 
-    -	Resource group : Select **Use Existing** resource group. <br/>
-    -   Location: Canada East, or Canada Central (this should automatically fill when you choose resource group, leave as is)
-    -   Enable geo-redundancy: No
+7.	Provide the following details in new blade.<br/>
+    -	**ID** : Provide any unique name.
+    -	**API** : SQL
+    -	**Resource group** : Select **Use Existing** resource group. <br/>
+    -   **Location**: Canada East, or Canada Central (this should automatically fill when you choose resource group, leave as is)
+    -   **Enable geo-redundancy**: No
     Click on **Create**.<br/>
 <img src="images/cosmosdbinfo.jpg"/><br/>
-8.	After completion (5-10min) a notification will be raised as below.<br/>
+8.	After completion a notification will be raised as below.<br/>
 <img src="images/cosmosdb_notification.jpg"/><br/>
-### 1.2	Create new DB and collection
+
+### 1.2	Create new Database and Collection
 1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
-3.  Now in the **Resource Groups** blade that appear, select the resource group for cosmos DB, (i.e, **odl-cosmosdb-hackfest**).<br/>
+3.  Now in the **Resource Groups** blade, select the resource group that we selected while creating **Azure Cosmos DB**.<br/>
 <img src="images/cosmosrg.jpg"/><br/>
 4.  Then click on the created Azure Cosmos DB account(i.e,cosmosdb321).<br/>
 <img src="images/cosmosdb.jpg"/><br/>
@@ -36,31 +37,34 @@
 <img src="images/cosmosdboverview.jpg"/><br/>
 6.  Click on **+Add Collection**.<br/> 
 <img src="images/selectAddCollection.jpg"/><br/>
-7.  provide the following details in the Add Collection blade that appears.<br/>
-    - Database id : Type a new database id
-    - Collection id : Type a new collection id
-    - Storage Capacity : **Fixed(10 GB)**
-    - Throughput : **1000**<br/>
+7.  Provide the following details in **Add Collection** blade that appears.<br/>
+    - **Database id** : Type a new database id
+    - **Collection id** : Type a new collection id
+    - **Storage Capacity** : Fixed(10 GB)
+    - **Throughput** : 1000<br/>
     Click on **OK**.<br/>
 <img src="images/addcollectioninfo.jpg"/><br/>    
+
 ### 1.3	Load the Data in to  Cosmos DB.
-#### 1.3.1	Access Windows VM and Launch Data migration tool.
+####  Access Windows VM and Launch Data migration tool.
 
 1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.  Click on the **Virtual Machines** icon on the **Menu navigation bar**.<br/>
 <img src="images/virtualmachine.png"/><br/>
-3.  Click on the **Powerbivm**<br/>
+3.  Click on the **powerbivm**<br/>
 <img src="images/powerbivm.png"/><br/>
-4.  Click on **Connect** button. On clicking on Connect, the rdp file automatically gets downloaded. Open the downloaded file.<br/>
+4.  Click on **Connect** button. It will open **Connent to virtual machine** window.<br/>
 <img src="images/connect.png"/><br/>
-5.  After Opening **RDP** file. In the remote desktop window that pops up, Click on **Connect**.<br/>
+5. Click on **Download RDP File**. It automatically download RDP file.<br/>
+<img src="images/downloadrdp.png"/><br/>
+5.  Open that **RDP** file. Remote desktop window will pops up, Click on **Connect** button.<br/>
 <img src="images/connect2.png"/><bbr/>
-6.  Now go to the Lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and enter into Enter your credentials page. Click on **OK**<br/>
+6.  Now go to lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and paste it in **Enter your credentials** page. Click on **OK**<br/>
 <img src="images/entervmcreds.png"/><br/>
 7.  Click on **Yes** in the pop up window.<br/>
 <img src="images/yes.PNG"/><br/>
-8. Open Internet Explorer inside the Windows VM and download the data which we would  migrate to cosmos DB by clicking [here](http://jsonstudio.com/wp-content/uploads/2014/02/stocks.zip) (http://bit.ly/cosmos-data) <br/>
-9. A zip file will download, extract and open the file to view the json data set.<br/>
+8. Open **Internet Explorer** inside the Windows VM and download the data which we will migrate to cosmos DB by clicking [here](http://jsonstudio.com/wp-content/uploads/2014/02/stocks.zip) (http://bit.ly/cosmos-data) <br/>
+9. A zip file will download, extract the file and open the file to view the json data set.<br/>
 10.  **Launch** your **data migration tool** by opening the **dtui.exe** application. (under C:\Packages)<br/>
 <img src="images/migrationtool.jpg"/><br/>   
 11.  In the **DocumentDB Data Migration Tool** blade that appear, Click on **Next**.<br/>
@@ -69,27 +73,27 @@
 <img src="images/SourceInfo.jpg"/><br/>   
 13.  Select the downloaded file, **stocks.json** and click on open.<br/>
 <img src="images/importfiles.jpg"/><br/>   
-14.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt.jpg"/><br/>
-15.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
+14.  Then in the **source information** page, click on **Next**. It will open **Target information page** page.<br/><img src="images/SourceInfoNxt.jpg"/><br/>
+15.  After this **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 16.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
-17.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
+17.  **Resource Groups** blade will appear, select the created resource group for Cosmos DB.<br/>
 <img src="images/cosmosrg.jpg"/><br/>
-18.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
+18.  Click on the created **Azure Cosmos DB account**.<br/>
 <img src="images/cosmosdb.jpg"/><br/>
 19.  In the **Azure Cosmos DB account** blade, Click on **keys** menu under the **setting** tile.<br/>
 <img src="images/keys.jpg"/><br/>   
-20.  Then **copy** the **Primary Connection String** and paste the connection string in a notepad.<br/>
+20.  Now, copy the **Primary Connection String** and paste it in a notepad.<br/>
 <img src="images/connString.jpg"/><br/>
-21.  Now click on **Overview** menu in the **Azure Cosmos DB account** page and copy the newly created database name, i.e, mynewdb.<br/><img src="images/copyDBname.jpg"/><br/>
-22.  Now open the notepad and after the connection string add the text **Database=mynewdb**.<br/>
+21. Click on **Overview** menu in the **Azure Cosmos DB account** page and copy the newly created database name, i.e, mynewdb.<br/><img src="images/copyDBname.jpg"/><br/>
+22.  Open the notepad and add **Database=mynewdb** in **Primay connection string** as shown below:<br/>
 <img src="images/notepad.jpg"/><br/>   
-23.  Then go back to the **Target information** page of the Data migration tool and provide the following details.<br/>
-       - Export to: **DocumentDB-Bulk import(Single partition collections)**.<br/>
-       - Connection String: Copy the entire text from the notepad and paste it here and Click on **Verify** button to verify the connection. Then a notification blade will pop-up which says **Successfully connected to documentDB account**.In that notification blade click on **OK**. <br/>
-       - Collections: Enter the name of the new collection, (i.e, **mynewcollection**). After this Click on **Add** button to add the collection.<br/>
+23.  Then go back to the **Target information** page of the Data migration tool and provide the following details:.<br/>
+       - **Export to**: DocumentDB-Bulk import(Single partition collections).<br/>
+       - **Connection String**: Copy the entire text from the notepad and paste it here and Click on **Verify** button to verify the connection. Then a notification blade will pop-up which says **Successfully connected to documentDB account**.In that notification blade click on **OK**. <br/>
+       - **Collections**: Enter the name of the new collection, (i.e, **mynewcollection**). After this Click on **Add** button to add the collection.<br/>
     <img src="images/targetinfodb.jpg"/><br/>   
-       - Collection throughput: Copy the collection **throughput** from the **overview** page of **Azure Cosmos DB account** and paste it here.<br/>
+       - **Collection throughput**: Copy the collection **throughput** from the **overview** page of **Azure Cosmos DB account** and paste it here.<br/>
     <img src="images/copythruput.jpg"/><br/>
     - Click on **Next** button.<br/>
     <img src="images/targetThruput.jpg"/><br/>
@@ -99,12 +103,13 @@
      <img src="images/importtodb.jpg"/><br/>
 27.  Now the import will start.It will take a couple of minutes to complete.
      <img src="images/exportStatus.jpg"/><br/>
+     
 ### 1.4	Use Data Explorer to interact with Cosmos DB database
 #### 1.4.1	Verify Data in Azure Portal
 1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
-3.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
+3.  Now in the **Resource Groups** blade that appear, select the created resource group for Cosmos DB.<br/>
 <img src="images/cosmosrg.jpg"/><br/>
 4.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
 <img src="images/cosmosdb.jpg"/><br/>
@@ -130,7 +135,6 @@ For example: SELECT * FROM c  WHERE c.Sector= "Financial"
 <img src="images/queryrun.jpg"/><br/>
 4.  Now we can see all the data with **Sector = Financial**<br/>
 <img src="images/query_op.jpg"/><br/>
-
 
 See this for more SQL Query examples: https://www.documentdb.com/sql/demo 
 ### 2.  Distribute Data Globally
