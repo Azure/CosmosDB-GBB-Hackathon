@@ -22,7 +22,7 @@ In this we will create Azure Function App.<br/>
 
 ### Create a function
 
-  > _Let's create an Azure Function to retrieve data of flight deals._
+  > _Let's create an Azure Function to retrieve data of stocks._
 
 1. Go to **Resource groups** option present in the favourites menu on the left side panel and select the resource group **<inject story-id="story://Content-Private/content/dfd/SP-GDA/gdaexpericence1/story_a_gda_using_cosmosdb" key="myResourceGroupName"/>** and click on Azure Function named **<inject story-id="story://Content-Private/content/dfd/SP-GDA/gdaexpericence1/story_a_gda_using_cosmosdb" key="azureFunctionName"/>**.<br/>
 2. However over the **Functions** under **Functions Apps** and click on **+ sign** besides **Functions**.<br/>
