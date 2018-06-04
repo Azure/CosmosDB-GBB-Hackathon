@@ -64,7 +64,7 @@ In this we will create Azure Function App.<br/>
 <img src="images/Integrate1.jpg"/><br/>
 11. You will be redirected to **Cosmos DB Account blade**, select the **MongoDB DB Account** as shown below.<br/>
 <img src="images/selectmongodocdb1.jpg"/><br/>
-12. Now, go to **HttpTriggerCSharp** and click on **Save** button ![](img/save.jpg) button.<br/>
+12. Now, go to **HttpTriggerCSharp** and click on **Save** button.<br/>
 13. To check whether the function is integrated, click on **HttpTriggerCSharp** function present under **AureFunctionForDeals** function app blade and click on **Test** option present at the right most corner.<br/>
 <img src="images/file3.jpg"/><br/>
 14. Select **HTTP method** as **GET** from the dropdown. Then click **Run** button at the bottom.<br/>
