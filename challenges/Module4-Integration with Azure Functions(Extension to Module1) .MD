@@ -20,7 +20,7 @@ In this we will create Azure Function App.<br/>
 5. Click on **Go to Resource** Once provisioning is completed.<br/>
 <img src="images/functioncreated.jpg"/><br/>
 
-### Create a function with Deal Data
+### Create a function
 
   > _Let's create an Azure Function to retrieve data of flight deals._
 
