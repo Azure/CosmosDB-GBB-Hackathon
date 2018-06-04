@@ -71,4 +71,4 @@ In this we will create Azure Function App.<br/>
 15. Status **200 Ok** will be displayed once the test is completed which signifies that the function is integrated successfully.<br/>
 <img src="images/status2002.jpg"/><br/>
 
-   > _Here you go! You have successfully created Azure Function to_ _retrieve flight deals_ _data from_ **Cosmos DB**_._
+   > _Here you go! You have successfully created Azure Function.
