@@ -1,4 +1,4 @@
-# Module 2: Migrate MongoDB Applications to Azure Cosmos DB(Mongo API)
+# Module 1: Migrate MongoDB Applications to Azure Cosmos DB(Mongo API)
 ## Scenario 1: Understand the Flight Reservation App, Local MongoDB and test Application
 ### Understand Flight reservation application 
 #### Access Jump VM 
