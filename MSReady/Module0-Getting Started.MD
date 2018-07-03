@@ -16,7 +16,7 @@ In the begining of the lab, instructor will provide the attendees with a http://
       
       **Click** on **SUBMIT** after entering the above details.
       
-       <img src="master/challenges/images/signup1.png"/><br/>  
+       <img src="images/signup1.png"/><br/>  
  
  3.  On clicking **SUBMIT**, you will be redirected to the following page. Click on the **LAUNCH LAB** button to start the deployment.  
  
