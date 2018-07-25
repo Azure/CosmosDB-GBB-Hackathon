@@ -67,5 +67,5 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
 </table>
 
 
-<strong>Contact Ron from the Microsoft OSS Data GBB team for additional locations or if you are a partner interested in hosting a hackathon</strong>
+<strong>Contact Ron from the Microsoft OSS Data GBB team for additional locations or if you are a partner interested in hosting a hackathon.</strong>
 <strong>ronabel@microsoft.com</strong>
