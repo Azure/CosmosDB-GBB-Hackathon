@@ -3,7 +3,7 @@
 
 This repository contains practical exercises for the Azure CosmosDB Hackfest program. Here you will find a copy of the event schedule, challenge exercises, solutions, and presentations.
 
-<strong>Confirmed Locations:</strong>
+<strong>Confirmed Locations for CYQ2:</strong>
 
 <table>
   <tr>
@@ -61,6 +61,8 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
     <td><a href="https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x372816229e0" target="_blank">New York</a></td>
     <td>Thursday 6/14/2018</td>
   </tr>
+  
+  
   
 
 </table>
