@@ -61,13 +61,7 @@ This repository contains practical exercises for the Azure CosmosDB Hackfest pro
     <td><a href="https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x372816229e0" target="_blank">New York</a></td>
     <td>Thursday 6/14/2018</td>
   </tr>
-  
-    <tr>
-    <td> Please contact Ron Abellera of the GBB team if you want to nominate a location or you are a partner that wants to host a sesssion for customers.</td>
-    <td><a href="mailto:ronabel@microsoft.com" target="_blank">Ron Abellera - Open Source Data Lead for Americas</a></td>
-    <td></td>
-    </tr>
-  
+
   
 
 </table>
