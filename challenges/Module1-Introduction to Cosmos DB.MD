@@ -68,7 +68,7 @@
 <img src="images/SourceInfo.jpg"/><br/>   
 12.  Go to  **C** drive and select the **stocks** folder, click on **stocks.json** to open it.<br/>
 <img src="images/importfiles1.jpg"/><br/>  
-13.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt.jpg"/><br/>
+13.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt1.jpg"/><br/>
 14.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 15.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
