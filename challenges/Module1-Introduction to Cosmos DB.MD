@@ -60,7 +60,7 @@
 7.  Click on **Yes** in the pop up window.<br/>
 <img src="images/yes.PNG"/><br/>
 8.  You'd have a pre-created windows virtual machine named PowerBI VM for you in your azure lab environment. Please access the virtual machine via remote desktop. DNS Name for the virtual machine is also available on the lab details page. <br/>
-9. Download the sample data inside the **PowerBI VM** which we would migrate to cosmos DB by clicking [here](https://experienceazure.blob.core.windows.net/templates/cosmosdb/stocks/stocks.json) <br/>
+9. Download the sample data inside the **PowerBI VM** which we would migrate to cosmos DB by clicking [here](https://github.com/Azure/CosmosDB-GBB-Hackathon/tree/master/stocks) (https://bit.ly/2SdZFKv) <br/>
   >Open the file to view the json data set.<br/>
 10.  **Launch** your **data migration tool** by opening the **dtui** application (From Desktop).<br/>
 <img src="images/dtui.jpg"/><br/>   
