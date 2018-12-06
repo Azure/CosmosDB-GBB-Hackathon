@@ -55,7 +55,7 @@ Now, Click on **Create**.<br/>
 <img src="images/connect.png"/><br/>
 5.  After Opening **RDP** file. In the remote desktop window that pops up, Click on **Connect**.<br/>
 <img src="images/connect2.png"/><bbr/>
-6.  Now go to the Lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and enter into Enter your credentials page. Click on **OK**<br/>
+6.  Now go to the Lab details page, which you recieved after launching the lab. Copy the VMs **username** and **password** and paste them into your credentials page. Click on **OK**<br/>
 <img src="images/entervmcreds.png"/><br/>
 7.  Click on **Yes** in the pop up window.<br/>
 <img src="images/yes.PNG"/><br/>
