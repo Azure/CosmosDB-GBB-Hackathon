@@ -19,7 +19,7 @@
     -	API : **SQL** 
     -	Resource group : Select **Use Existing** resource group. <br/>
     -   Location: Canada East, or Canada Central (this should automatically fill when you choose resource group, leave as it is)
-    -   Enable geo-redundancy: No
+    -   Enable geo-redundancy: No<br/>
     Click on **Create**.<br/>
 <img src="images/cosmosdbinfo.jpg"/><br/>
 8.	After completion (5-10min) a notification will be raised as below.<br/>
