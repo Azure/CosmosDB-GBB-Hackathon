@@ -20,6 +20,8 @@
     -	Resource group : Select **Use Existing** resource group. <br/>
     -   Location: Canada East, or Canada Central (this should automatically fill when you choose resource group, leave as it is)
     -   Enable geo-redundancy</br>
+Click on **Next** until you reach to summary page.<br/>
+<img src="images/cosmosdbinfo.jpg"/><br/>
 Now, Click on **Create**.<br/>
 <img src="images/cosmosdbinfo.jpg"/><br/>
 8.	After completion (5-10min) a notification will be raised as below.<br/>
@@ -39,8 +41,8 @@ Now, Click on **Create**.<br/>
 7.  provide the following details in the Add Collection blade that appears.<br/>
     - Database id : Type a new database id
     - Collection id : Type a new collection id
-    - Storage Capacity : **Fixed(10 GB)**
-    - Throughput : **1000**<br/>
+    - Partitin key : **/mynewpartitionkey**
+    - Throughput : **10000**<br/>
     Click on **OK**.<br/>
 <img src="images/addcollectioninfo.jpg"/><br/>    
 ### 1.3	Load the Data in to  Cosmos DB.
@@ -60,7 +62,7 @@ Now, Click on **Create**.<br/>
 7.  Click on **Yes** in the pop up window.<br/>
 <img src="images/yes.PNG"/><br/>
 8.  You'd have a pre-created windows virtual machine named PowerBI VM for you in your azure lab environment. Please access the virtual machine via remote desktop. DNS Name for the virtual machine is also available on the lab details page. <br/>
-9. Download the sample data inside the **PowerBI VM** which we would migrate to cosmos DB by clicking [here](https://experienceazure.blob.core.windows.net/templates/cosmosdb/stocks/stocks.json) <br/>
+9. Go to C drive and locate stock folder you will see sample data which we would migrate to cosmos DB<br/>
   >Open the file to view the json data set.<br/>
 10.  **Launch** your **data migration tool** by opening the **dtui** application (From Desktop).<br/>
 <img src="images/dtui.jpg"/><br/>   
@@ -92,6 +94,7 @@ Now, Click on **Create**.<br/>
     After this Click on **Verify** button to verify the connection. Then a notification blade will pop-up which says **Successfully             connected to documentDB account**.In that notification blade click on **OK**. <br/>
     <img src="images/Notification.jpg"/><br/>   
        - Collections: Enter the name of the new collection, (i.e, **mynewcollection**).  
+        - Partition Key: Enter the name of the new collection, (i.e, **/mynewpartitionkey**).
     After this Click on **Add** button to add the collection.<br/>
     <img src="images/targetinfocollection.jpg"/><br/>    
        - Collection throughput: Copy the collection **throughput** from the **overview** page of **Azure Cosmos DB account** and paste it here.<br/>
@@ -109,9 +112,9 @@ Now, Click on **Create**.<br/>
 1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
-3.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
+3.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB.<br/>
 <img src="images/cosmosrg.jpg"/><br/>
-4.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
+4.  Then click on the created **Azure Cosmos DB account**.<br/>
 <img src="images/cosmosdb.jpg"/><br/>
 5.  In the **Azure Cosmos DB account** blade that appear, Click on **Data Explorer**.<br/>
 <img src="images/dataexplorer.jpg"/><br/>
