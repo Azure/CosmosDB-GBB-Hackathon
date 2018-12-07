@@ -23,7 +23,7 @@
 Click on **Next** until you reach to summary page.<br/>
 <img src="images/cosmosdbinfo.jpg"/><br/>
 Now, Click on **Create**.<br/>
-<img src="images/cosmosdbinfo.jpg"/><br/>
+<img src="images/cosmosdbinfo1.jpg"/><br/>
 8.	After completion (5-10min) a notification will be raised as below.<br/>
 <img src="images/cosmosdb_notification.jpg"/><br/>
 ### 1.2	Create new DB and collection
