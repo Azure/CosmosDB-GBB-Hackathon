@@ -41,7 +41,7 @@ Now, Click on **Create**.<br/>
 7.  provide the following details in the Add Collection blade that appears.<br/>
     - Database id : Type a new database id
     - Collection id : Type a new collection id
-    - Partitin key : **/mynewpartitionkey**
+    - Partitin key : **/ticker**
     - Throughput : **10000**<br/>
     Click on **OK**.<br/>
 <img src="images/addcollectioninfo.jpg"/><br/>    
@@ -76,9 +76,9 @@ Now, Click on **Create**.<br/>
 15.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 16.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
-17.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
+17.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB.<br/>
 <img src="images/cosmosrg.jpg"/><br/>
-18.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
+18.  Then click on the created **Azure Cosmos DB account**.<br/>
 <img src="images/cosmosdb.jpg"/><br/>
 19.  In the **Azure Cosmos DB account** blade, Click on **keys** menu under the **setting** tile.<br/>
 <img src="images/keys.jpg"/><br/>   
@@ -94,13 +94,12 @@ Now, Click on **Create**.<br/>
     After this Click on **Verify** button to verify the connection. Then a notification blade will pop-up which says **Successfully             connected to documentDB account**.In that notification blade click on **OK**. <br/>
     <img src="images/Notification.jpg"/><br/>   
        - Collections: Enter the name of the new collection, (i.e, **mynewcollection**).  
-        - Partition Key: Enter the name of the new collection, (i.e, **/mynewpartitionkey**).
+        - Partition Key: Enter the name of the new collection, (i.e, **/ticker**).
     After this Click on **Add** button to add the collection.<br/>
-    <img src="images/targetinfocollection.jpg"/><br/>    
        - Collection throughput: Copy the collection **throughput** from the **overview** page of **Azure Cosmos DB account** and paste it here.<br/>
     Click on **Next** button.
     <img src="images/copythruput.jpg"/><br/>
-    <img src="images/targetThruput.jpg"/><br/>
+    <img src="images/targetinfocollection.jpg"/><br/>
 24.  Then an **advanced** page will appear, in that click on **Next**.
      <img src="images/advancedPage.jpg"/><br/>
 25.  Then a Summary page will appear, in that click on **Import**.
