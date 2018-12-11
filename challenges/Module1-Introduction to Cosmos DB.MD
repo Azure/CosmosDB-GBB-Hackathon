@@ -41,7 +41,7 @@ Now, Click on **Create**.<br/>
 7.  provide the following details in the Add Collection blade that appears.<br/>
     - Database id : Type a new database id
     - Collection id : Type a new collection id
-    - Partitin key : **/ticker**
+    - Partition key : **/ticker**
     - Throughput : **10000**<br/>
     Click on **OK**.<br/>
 <img src="images/addcollectioninfo.jpg"/><br/>    
