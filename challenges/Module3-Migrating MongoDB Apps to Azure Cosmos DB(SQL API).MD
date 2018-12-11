@@ -67,9 +67,12 @@ In this we will create Azure Function App.<br/>
 *	**OS**: Windows
 *	**Hosting Plan**: Consumption Plan
 *	**Location**: Location of your RG
+*   **Runtime Stack**: **.Net**
 *	**Storage**: Click on **Create new**<br/>
-    Click on **Create**.<br/>
-    <img src="images/fnxinfo.jpg"/><br/>
+*   **Application Insight**: **Disable** application insight
+<img src="images/fnxinfo1.jpg"/><br/>
+ Click on **Create**.<br/>
+ <img src="images/fnxinfo.jpg"/><br/>
 5. Click on **Go to Resource** Once provisioning is completed.<br/>
 <img src="images/functioncreated.jpg"/><br/>
 
@@ -81,7 +84,7 @@ In this we will create Azure Function App.<br/>
 2. However over the **Functions** under **Functions Apps** and click on **+ sign** besides **Functions**.<br/>
 3. Now, click on the **Custom function** link present at the bottom of the page.<br/>
 <img src="images/GetStartedOnYourOwn.jpg"/><br/>
-4. Click on **C#** template available in **HTTP trigger** section and name the function as "**FetchDealsData**" in **Name** textbox and click **Create** button.<br/>
+4. Click on template available in **HTTP trigger** section and name the function as "**FetchDealsData**" in **Name** textbox and click **Create** button.<br/>
 <img src="images/httptrigger.jpg"/><br/>
 <img src="images/httpvalue.jpg"/><br/>
 5. A function with sample default code would get created. Now, replace the sample default code with the code snippet given below.<br/>
