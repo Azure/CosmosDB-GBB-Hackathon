@@ -83,9 +83,9 @@
 9.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
 10.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
-<img src="images/resourcegrp.jpg"/><br/>
+<img src="images/rg.jpg"/><br/>
 11.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
-<img src="images/cosmosdb.jpg"/><br/>
+<img src="images/resourcegrp.jpg"/><br/>
 12.  In the **Azure Cosmos DB account** blade, Click on **keys** menu under the **setting** tile.<br/>
 <img src="images/keys.jpg"/><br/>   
 13.  Then **copy** the **Primary Connection String** and paste the connection string in a notepad.<br/>
