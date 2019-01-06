@@ -77,7 +77,7 @@
 5.  In the source information page that appear, select Import from **JSON file(s)** and click on **Add Files**.<br/>
 <img src="images/SourceInfo.jpg"/><br/>   
 6.  Select the downloaded file, **stocks.json** and click on open.<br/>
-<img src="images/importfiles.jpg"/><br/>   
+<img src="images/stock.jpg"/><br/>   
 7.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt1.jpg"/><br/>
 8.  Now, to get the connection string details for CosmosDB account, **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 9.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
