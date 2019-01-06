@@ -81,7 +81,7 @@
 7.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt1.jpg"/><br/>
 8.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 9.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
-<img src="images/rg.jpg"/><br/>
+<img src="images/resourcegrp.jpg"/><br/>
 10.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
 <img src="images/cosmosrg.jpg"/><br/>
 11.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
