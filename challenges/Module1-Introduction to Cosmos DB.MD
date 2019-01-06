@@ -47,9 +47,9 @@
 ### 1.3	Create new DB and collection
 1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
-<img src="images/resourcegrp.jpg"/><br/>
+<img src="images/rg.jpg"/><br/>
 3.  Now in the **Resource Groups** blade that appear, select the resource group for cosmos DB, (i.e, **odl-cosmosdb-hackfest**).<br/>
-<img src="images/cosmosrg.jpg"/><br/>
+<img src="images/resourcegrp.jpg"/><br/>
 4.  Then click on the created Azure Cosmos DB account(i.e,cosmosdb321).<br/>
 <img src="images/cosmosdb.jpg"/><br/>
 5.	In the Azure Cosmos DB account blade that appear, Click on **Overview**.<br/>
@@ -81,9 +81,9 @@
 7.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt1.jpg"/><br/>
 8.  Now, to get the connection string details for CosmosDB account, **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 9.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
-<img src="images/resourcegrp.jpg"/><br/>
+<img src="images/rg.jpg"/><br/>
 10.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
-<img src="images/cosmosrg.jpg"/><br/>
+<img src="images/resourcegrp.jpg"/><br/>
 11.  Then click on the created **Azure Cosmos DB account(i.e,cosmosdb321)**.<br/>
 <img src="images/cosmosdb.jpg"/><br/>
 12.  In the **Azure Cosmos DB account** blade, Click on **keys** menu under the **setting** tile.<br/>
