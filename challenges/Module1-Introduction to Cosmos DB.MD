@@ -1,8 +1,24 @@
 
 # Lab1: Introduction to Cosmos DB
-## 1.	Introduction to Azure Cosmos DB
 
-### 1.1	Create Cosmos DB Account with SQL API
+#### 1.1 Access Windows VM 
+1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
+2.  Click on the **Virtual Machines** icon on the **Menu navigation bar**.<br/>
+<img src="images/virtualmachine.png"/><br/>
+3.  Click on the **Powerbivm**<br/>
+<img src="images/powerbivm.png"/><br/>
+4.  Click on **Connect** button. On clicking on Connect, the rdp file automatically gets downloaded. Open the downloaded file.<br/>
+<img src="images/connect.png"/><br/>
+5.  After Opening **RDP** file. In the remote desktop window that pops up, Click on **Connect**.<br/>
+<img src="images/connect2.png"/><bbr/>
+6.  Now go to the Lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and enter into Enter your credentials page. Click on **OK**<br/>
+<img src="images/entervmcreds.png"/><br/>
+7.  Click on **Yes** in the pop up window.<br/>
+<img src="images/yes.PNG"/><br/>
+8. Launch your data migration tool by opening the dtui application (From Desktop).
+<img src="images/dtui.jpg"/><br/>   
+
+### 1.2	Create Cosmos DB Account with SQL API
 1.	**Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.	To toggle show/hide the Portal menu options with icon, Click on the **Show Menu** button.<br/>     
 <img src="images/showhide.jpg"/><br/>
@@ -24,7 +40,8 @@
 <img src="images/cosmosdbinfo.jpg"/><br/>
 8.	After completion (5-10min) a notification will be raised as below.<br/>
 <img src="images/cosmosdb_notification.jpg"/><br/>
-### 1.2	Create new DB and collection
+
+### 1.3	Create new DB and collection
 1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 2.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/rg.jpg"/><br/>
@@ -42,25 +59,12 @@
     - Storage Capacity : **Fixed(10 GB)**
     - Throughput : **1000**<br/>
     Click on **OK**.<br/>
-<img src="images/addcollectioninfo.jpg"/><br/>    
-### 1.3	Load the Data in to  Cosmos DB.
-#### 1.3.1	Access Windows VM and Launch Data migration tool.
+<img src="images/addcollectioninfo.jpg"/><br/>
 
-1.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
-2.  Click on the **Virtual Machines** icon on the **Menu navigation bar**.<br/>
-<img src="images/virtualmachine.png"/><br/>
-3.  Click on the **Powerbivm**<br/>
-<img src="images/powerbivm.png"/><br/>
-4.  Click on **Connect** button. On clicking on Connect, the rdp file automatically gets downloaded. Open the downloaded file.<br/>
-<img src="images/connect.png"/><br/>
-5.  After Opening **RDP** file. In the remote desktop window that pops up, Click on **Connect**.<br/>
-<img src="images/connect2.png"/><bbr/>
-6.  Now go to the Lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and enter into Enter your credentials page. Click on **OK**<br/>
-<img src="images/entervmcreds.png"/><br/>
-7.  Click on **Yes** in the pop up window.<br/>
-<img src="images/yes.PNG"/><br/>
-8.  You'd have a pre-created windows virtual machine named PowerBI VM for you in your azure lab environment. Please access the virtual machine via remote desktop. DNS Name for the virtual machine is also available on the lab details page. <br/>
-9. Download the sample data inside the **PowerBI VM** which we would migrate to cosmos DB by clicking [here](https://experienceazure.blob.core.windows.net/templates/cosmosdb/stocks/stocks.json) <br/>
+### 1.3	Load the Data in to  Cosmos DB.
+
+1.  You'd have a pre-created windows virtual machine named PowerBI VM for you in your azure lab environment. Please access the virtual machine via remote desktop. DNS Name for the virtual machine is also available on the lab details page. <br/>
+9. Go to C drive and locate stock folder you will see sample data which we would migrate to azure cosmos<br/>
   >Open the file to view the json data set.<br/>
 10.  **Launch** your **data migration tool** by opening the **dtui** application (From Desktop).<br/>
 <img src="images/dtui.jpg"/><br/>   
