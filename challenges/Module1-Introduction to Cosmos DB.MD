@@ -15,7 +15,7 @@
 <img src="images/entervmcreds.png"/><br/>
 7.  Click on **Yes** in the pop up window.<br/>
 <img src="images/yes.PNG"/><br/>
-8. Launch your data migration tool by opening the dtui application (From Desktop).
+8. Now you can access you virtual machine.
 <img src="images/dtui.jpg"/><br/>   
 
 ### 1.2	Create Cosmos DB Account with SQL API
@@ -79,7 +79,7 @@
 6.  Select the downloaded file, **stocks.json** and click on open.<br/>
 <img src="images/importfiles.jpg"/><br/>   
 7.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt1.jpg"/><br/>
-8.  **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
+8.  Now, to get the connection string details for CosmosDB account, **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 9.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
 <img src="images/resourcegrp.jpg"/><br/>
 10.  Now in the **Resource Groups** blade that appear, select the created resource group for cosmos DB, (i.e, **cosmosdb-rg**).<br/>
