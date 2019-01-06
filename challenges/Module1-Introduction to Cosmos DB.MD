@@ -39,7 +39,7 @@
     -   Multi-region Writes: **Writes** 
     Click on **Create**.<br/>
 <img src="images/cosmosdbinformation.jpg"/><br/>
-8. Review the cosmos and create it.
+8. Review the cosmos and create it.<br/>
 <img src="images/cosmosdbinformation1.jpg"/><br/>
 9.	After completion (5-10 min) a notification will be raised as below.<br/>
 <img src="images/cosmosdb_notification.jpg"/><br/>
