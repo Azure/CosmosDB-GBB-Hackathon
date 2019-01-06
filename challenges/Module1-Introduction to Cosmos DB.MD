@@ -8,11 +8,11 @@
 3.  Click on the **Powerbivm**<br/>
 <img src="images/powerbivm.png"/><br/>
 4.  Click on **Connect** button. On clicking on Connect, the rdp file automatically gets downloaded. Open the downloaded file.<br/>
-<img src="images/connect.png"/><br/>
+<img src="images/connect.jpg"/><br/>
 5.  After Opening **RDP** file. In the remote desktop window that pops up, Click on **Connect**.<br/>
-<img src="images/connect2.png"/><bbr/>
+<img src="images/connect2.jpg"/><bbr/>
 6.  Now go to the Lab details page, which you have recieved after launching the lab. Copy the VMs **username** and **password** and enter into Enter your credentials page. Click on **OK**<br/>
-<img src="images/entervmcreds.png"/><br/>
+<img src="images/entervmcreds.jpg"/><br/>
 7.  Click on **Yes** in the pop up window.<br/>
 <img src="images/yes.PNG"/><br/>
 8. Now you can access you virtual machine.
