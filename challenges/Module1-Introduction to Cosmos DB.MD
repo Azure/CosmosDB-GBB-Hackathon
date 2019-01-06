@@ -36,7 +36,7 @@
     -	API : **Core (SQL)** 
     -   Location: (this should automatically fill when you choose resource group, leave as it is)
     -   Geo-Redundancy: **Disable**
-    -   Multi-region Writes: **Writes** 
+    -   Multi-region Writes: **Disable** <br/>
     Click on **Create**.<br/>
 <img src="images/cosmosdbinformation.jpg"/><br/>
 8. Review the cosmos and create it.<br/>
