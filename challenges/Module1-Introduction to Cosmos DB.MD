@@ -68,7 +68,7 @@
 ### 1.4	Load the Data in to  Cosmos DB.
 
 1.  You'd have a pre-created windows virtual machine named PowerBI VM for you in your azure lab environment. Please access the virtual machine via remote desktop. DNS Name for the virtual machine is also available on the lab details page. <br/>
-2. Go to **C drive** and locate **stocks** folder you will see sample data which we would migrate to Azure CosmosDB.<br/>
+2. Go to **C drive** and locate **stocks** folder you will see sample data in json format(stocks.json) which we would migrate to Azure CosmosDB.<br/>
   >Open the 'stocks.json' file to view the json data set.<br/>
 3.  **Launch** your **data migration tool** by opening the **dtui** application (From Desktop).<br/>
 <img src="images/dtui.jpg"/><br/>   
@@ -77,7 +77,7 @@
 5.  In the source information page that appear, select Import from **JSON file(s)** and click on **Add Files**.<br/>
 <img src="images/SourceInfo.jpg"/><br/>   
 6.  Select the downloaded file, **stocks.json** and click on open.<br/>
-<img src="images/stocks.jpg"/><br/>   
+<img src="images/stocksjson.jpg"/><br/>   
 7.  Then in the **source information** page, click on **Next** and a Target information page will appear.<br/><img src="images/SourceInfoNxt1.jpg"/><br/>
 8.  Now, to get the connection string details for CosmosDB account, **Launch** a browser and **navigate** to https://portal.azure.com. **Login** with your Microsoft Azure credentials.<br/>
 9.  Click on the **Resource Group** icon on the **Menu navigation bar**.<br/>
