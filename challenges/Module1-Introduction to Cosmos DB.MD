@@ -103,7 +103,7 @@
     After this Click on **Add** button to add the collection.<br/>
     <img src="images/targetinfocollection.jpg"/><br/>    
        - Collection throughput: **500**<br/>
-       - Partition Key: **/Ticker**
+       - Partition Key: **/Ticker**<br/>
     Click on **Next** button.
     <img src="images/colletion.jpg"/><br/>
 17.  Then an **advanced** page will appear, in that click on **Next**.
